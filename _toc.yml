@@ -13,7 +13,7 @@ parts:
     chapters:
       - file: 1_intro_to_CESM
       - file: 2_demo_run_CESM_4steps
-      - file: 3_run_piControl_midHolocene
+      - file: 3_optional_run_piControl_midHolocene
       - file: 4_analyze_CESM_output
   - caption: Info and Advanced Modules
     numbered: False
