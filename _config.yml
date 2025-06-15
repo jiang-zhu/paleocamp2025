@@ -32,3 +32,5 @@ myst_enable_extensions:
   - deflist
   - html_admonition
   - html_image
+
+copyright: "© 2025 Jiang Zhu"
