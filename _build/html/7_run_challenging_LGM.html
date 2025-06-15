@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>7. 3.5 Challenge: Run an LGM simulations with the Paleoclimate-Calibrated CESM2 &#8212; Running CESM in Four Steps &amp; Analyzing Output</title>
+    <title>7. Challenge: Run an LGM simulations with the Paleoclimate-Calibrated CESM2 &#8212; Running CESM in Four Steps &amp; Analyzing Output</title>
   
   
   
@@ -60,7 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = '7_run_challenging_LGM';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="6. 3.4 More Info: iCESM and iTRACE analysis" href="6_info_iCESM_iTRACE.html" />
+    <link rel="prev" title="6. More Info: iCESM and iTRACE analysis" href="6_info_iCESM_iTRACE.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -186,16 +186,16 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Main Learning Modules</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="1_intro_to_CESM.html">1. 1. Introduction to CESM</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_demo_run_CESM_4steps.html">2. 2. Run CESM in four steps</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3_run_piControl_midHolocene.html">3. 3.1 Run a pair of piControl and midHolocene simulations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="4_analyze_CESM_output.html">4. 3.2 Analyze CESM Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_intro_to_CESM.html">1. Introduction to CESM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_demo_run_CESM_4steps.html">2. Run CESM in four steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_run_piControl_midHolocene.html">3. Run a pair of piControl and midHolocene simulations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_analyze_CESM_output.html">4. Analyze CESM Output</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Info and Advanced Modules</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="5_info_Data_Access.html">5. 3.3 More Info: Climate and Model Data Access</a></li>
-<li class="toctree-l1"><a class="reference internal" href="6_info_iCESM_iTRACE.html">6. 3.4 More Info: iCESM and iTRACE analysis</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">7. 3.5 Challenge: Run an LGM simulations with the Paleoclimate-Calibrated CESM2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_info_Data_Access.html">5. More Info: Climate and Model Data Access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6_info_iCESM_iTRACE.html">6. More Info: iCESM and iTRACE analysis</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">7. Challenge: Run an LGM simulations with the Paleoclimate-Calibrated CESM2</a></li>
 </ul>
 
     </div>
@@ -381,7 +381,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>3.5 Challenge: Run an LGM simulations with the Paleoclimate-Calibrated CESM2</h1>
+    <h1>7. Challenge: Run an LGM simulations with the Paleoclimate-Calibrated CESM2</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -391,10 +391,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-new-case">7.1. Create new case</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-setup">7.2. case setup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-build">7.3. case build</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submit-job">7.4. submit job</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-new-case">Create new case</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-setup">case setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-build">case build</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submit-job">submit job</a></li>
 </ul>
             </nav>
         </div>
@@ -408,7 +408,7 @@ document.write(`
                   
   <p><img alt="paleoCAMP logo" src="_images/paleoCAMPLogo.png" /></p>
 <section class="tex2jax_ignore mathjax_ignore" id="challenge-run-an-lgm-simulations-with-the-paleoclimate-calibrated-cesm2">
-<h1><span class="section-number">7. </span>3.5 Challenge: Run an LGM simulations with the Paleoclimate-Calibrated CESM2<a class="headerlink" href="#challenge-run-an-lgm-simulations-with-the-paleoclimate-calibrated-cesm2" title="Link to this heading">#</a></h1>
+<h1>7. Challenge: Run an LGM simulations with the Paleoclimate-Calibrated CESM2<a class="headerlink" href="#challenge-run-an-lgm-simulations-with-the-paleoclimate-calibrated-cesm2" title="Link to this heading">#</a></h1>
 <p><strong>Tutorials at <a class="reference external" href="https://paleoclimate.camp/">the 2025 paleoCAMP</a> | June 16–June 30, 2025</strong></p>
 <p><a class="reference external" href="https://staff.cgd.ucar.edu/jiangzhu/">Jiang Zhu</a><br />
 <a class="reference external" href="mailto:jiangzhu&#37;&#52;&#48;ucar&#46;edu">jiangzhu<span>&#64;</span>ucar<span>&#46;</span>edu</a><br />
@@ -432,7 +432,7 @@ NSF National Center for Atmospheric Research</p>
 <p><strong>Type in your CIT password (the one you set up with CISL) and approve the DUO push</strong></p>
 <p><img alt="Derecho SSH" src="_images/derecho_ssh_login.png" /></p>
 <section id="create-new-case">
-<h2><span class="section-number">7.1. </span>Create new case<a class="headerlink" href="#create-new-case" title="Link to this heading">#</a></h2>
+<h2>Create new case<a class="headerlink" href="#create-new-case" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>A long-format compset was used to have more precise control of how I want to run each component</p></li>
 </ul>
@@ -442,7 +442,7 @@ NSF National Center for Atmospheric Research</p>
 </div>
 </section>
 <section id="case-setup">
-<h2><span class="section-number">7.2. </span>case setup<a class="headerlink" href="#case-setup" title="Link to this heading">#</a></h2>
+<h2>case setup<a class="headerlink" href="#case-setup" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>I have FORTRAN code changes that need to be put into SourceMods/src.xxx/</p></li>
 <li><p>I specify how many CPUs to use for each component for a better computation performance</p></li>
@@ -489,7 +489,7 @@ cp<span class="w"> </span>/glade/u/home/jiangzhu/cesm/backup/nimax_limiterA/micr
 </div>
 </section>
 <section id="case-build">
-<h2><span class="section-number">7.3. </span>case build<a class="headerlink" href="#case-build" title="Link to this heading">#</a></h2>
+<h2>case build<a class="headerlink" href="#case-build" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>I usually set up namelist changes before running <code class="docutils literal notranslate"><span class="pre">case.build</span></code></p></li>
 <li><p>user_nl_cpl: orbital change</p></li>
@@ -564,7 +564,7 @@ cp<span class="w"> </span>/glade/u/home/jiangzhu/cesm/backup/nimax_limiterA/micr
 </div>
 </section>
 <section id="submit-job">
-<h2><span class="section-number">7.4. </span>submit job<a class="headerlink" href="#submit-job" title="Link to this heading">#</a></h2>
+<h2>submit job<a class="headerlink" href="#submit-job" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>The model runs 46 years per wallclock day, so STOP_N=20 works well (20 years can be finished within the limit of JOB_WALLCLOCK_TIME of 12 hours)</p></li>
 </ul>
@@ -587,16 +587,16 @@ cp<span class="w"> </span>/glade/u/home/jiangzhu/cesm/backup/nimax_limiterA/micr
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "npl-2024a"
+            mode: "npl-2025a"
         },
         kernelOptions: {
-            name: "npl-2024a",
+            name: "npl-2025a",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'npl-2024a'</script>
+    <script>kernelName = 'npl-2025a'</script>
 
                 </article>
               
@@ -614,7 +614,7 @@ cp<span class="w"> </span>/glade/u/home/jiangzhu/cesm/backup/nimax_limiterA/micr
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">6. </span>3.4 More Info: iCESM and iTRACE analysis</p>
+        <p class="prev-next-title">6. More Info: iCESM and iTRACE analysis</p>
       </div>
     </a>
 </div>
@@ -633,10 +633,10 @@ cp<span class="w"> </span>/glade/u/home/jiangzhu/cesm/backup/nimax_limiterA/micr
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-new-case">7.1. Create new case</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-setup">7.2. case setup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-build">7.3. case build</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submit-job">7.4. submit job</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-new-case">Create new case</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-setup">case setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-build">case build</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submit-job">submit job</a></li>
 </ul>
   </nav></div>
 

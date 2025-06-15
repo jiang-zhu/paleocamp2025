@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>3. 3.1 Run a pair of piControl and midHolocene simulations &#8212; Running CESM in Four Steps &amp; Analyzing Output</title>
+    <title>3. Run a pair of piControl and midHolocene simulations &#8212; Running CESM in Four Steps &amp; Analyzing Output</title>
   
   
   
@@ -60,8 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = '3_run_piControl_midHolocene';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="4. 3.2 Analyze CESM Output" href="4_analyze_CESM_output.html" />
-    <link rel="prev" title="2. 2. Run CESM in four steps" href="2_demo_run_CESM_4steps.html" />
+    <link rel="next" title="4. Analyze CESM Output" href="4_analyze_CESM_output.html" />
+    <link rel="prev" title="2. Run CESM in four steps" href="2_demo_run_CESM_4steps.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -187,16 +187,16 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Main Learning Modules</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="1_intro_to_CESM.html">1. 1. Introduction to CESM</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_demo_run_CESM_4steps.html">2. 2. Run CESM in four steps</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. 3.1 Run a pair of piControl and midHolocene simulations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="4_analyze_CESM_output.html">4. 3.2 Analyze CESM Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_intro_to_CESM.html">1. Introduction to CESM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_demo_run_CESM_4steps.html">2. Run CESM in four steps</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Run a pair of piControl and midHolocene simulations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_analyze_CESM_output.html">4. Analyze CESM Output</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Info and Advanced Modules</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="5_info_Data_Access.html">5. 3.3 More Info: Climate and Model Data Access</a></li>
-<li class="toctree-l1"><a class="reference internal" href="6_info_iCESM_iTRACE.html">6. 3.4 More Info: iCESM and iTRACE analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="7_run_challenging_LGM.html">7. 3.5 Challenge: Run an LGM simulations with the Paleoclimate-Calibrated CESM2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_info_Data_Access.html">5. More Info: Climate and Model Data Access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6_info_iCESM_iTRACE.html">6. More Info: iCESM and iTRACE analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7_run_challenging_LGM.html">7. Challenge: Run an LGM simulations with the Paleoclimate-Calibrated CESM2</a></li>
 </ul>
 
     </div>
@@ -382,7 +382,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>3.1 Run a pair of piControl and midHolocene simulations</h1>
+    <h1>3. Run a pair of piControl and midHolocene simulations</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -392,20 +392,20 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-run-a-fully-coupled-preindustrial-simulation-for-one-year">3.1. Task 1: run a fully coupled preindustrial simulation for one year</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hints">3.1.1. Hints:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#further-information">3.1.2. Further information</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-run-a-fully-coupled-preindustrial-simulation-for-one-year">Task 1: run a fully coupled preindustrial simulation for one year</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hints">Hints:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#further-information">Further information</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-run-a-fully-coupled-mid-holocene-simulation-with-the-orbital-forcing-for-one-year">3.2. Task 2: run a fully coupled mid-Holocene simulation with the orbital forcing for one year</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">3.2.1. Hints:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-run-a-fully-coupled-mid-holocene-simulation-with-the-orbital-forcing-for-one-year">Task 2: run a fully coupled mid-Holocene simulation with the orbital forcing for one year</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Hints:</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-how-to-validate-your-simulation-setup">3.3. Task 3: how to validate your simulation setup</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3.3.1. Hints:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-how-to-validate-your-simulation-setup">Task 3: how to validate your simulation setup</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Hints:</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">3.4. Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
 </ul>
             </nav>
         </div>
@@ -419,7 +419,7 @@ document.write(`
                   
   <p><img alt="paleoCAMP logo" src="_images/paleoCAMPLogo.png" /></p>
 <section class="tex2jax_ignore mathjax_ignore" id="run-a-pair-of-picontrol-and-midholocene-simulations">
-<h1><span class="section-number">3. </span>3.1 Run a pair of piControl and midHolocene simulations<a class="headerlink" href="#run-a-pair-of-picontrol-and-midholocene-simulations" title="Link to this heading">#</a></h1>
+<h1>3. Run a pair of piControl and midHolocene simulations<a class="headerlink" href="#run-a-pair-of-picontrol-and-midholocene-simulations" title="Link to this heading">#</a></h1>
 <p><strong>Tutorials at <a class="reference external" href="https://paleoclimate.camp/">the 2025 paleoCAMP</a> | June 16–June 30, 2025</strong></p>
 <p><a class="reference external" href="https://staff.cgd.ucar.edu/jiangzhu/">Jiang Zhu</a><br />
 <a class="reference external" href="mailto:jiangzhu&#37;&#52;&#48;ucar&#46;edu">jiangzhu<span>&#64;</span>ucar<span>&#46;</span>edu</a><br />
@@ -453,9 +453,9 @@ NSF National Center for Atmospheric Research</p>
 </ul>
 </div><hr class="docutils" />
 <section id="task-1-run-a-fully-coupled-preindustrial-simulation-for-one-year">
-<h2><span class="section-number">3.1. </span>Task 1: run a fully coupled preindustrial simulation for one year<a class="headerlink" href="#task-1-run-a-fully-coupled-preindustrial-simulation-for-one-year" title="Link to this heading">#</a></h2>
+<h2>Task 1: run a fully coupled preindustrial simulation for one year<a class="headerlink" href="#task-1-run-a-fully-coupled-preindustrial-simulation-for-one-year" title="Link to this heading">#</a></h2>
 <section id="hints">
-<h3><span class="section-number">3.1.1. </span>Hints:<a class="headerlink" href="#hints" title="Link to this heading">#</a></h3>
+<h3>Hints:<a class="headerlink" href="#hints" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>What are the four steps?</p></li>
 <li><p>What is the compset for fully coupled preindustrial?</p></li>
@@ -492,7 +492,7 @@ NSF National Center for Atmospheric Research</p>
 </details>
 </div></section>
 <section id="further-information">
-<h3><span class="section-number">3.1.2. </span>Further information<a class="headerlink" href="#further-information" title="Link to this heading">#</a></h3>
+<h3>Further information<a class="headerlink" href="#further-information" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Building the executable may take more than 10 minutes.</p></li>
 <li><p>While you wait, open a second terminal and practice your Unix commands (such as <code class="docutils literal notranslate"><span class="pre">cd</span></code>, <code class="docutils literal notranslate"><span class="pre">ls</span></code>, and <code class="docutils literal notranslate"><span class="pre">grep</span></code>) by visiting your directories of “Production Control Room”, “Factory”, and “Headquarter”, and see what are there.</p></li>
@@ -503,9 +503,9 @@ NSF National Center for Atmospheric Research</p>
 </section>
 <hr class="docutils" />
 <section id="task-2-run-a-fully-coupled-mid-holocene-simulation-with-the-orbital-forcing-for-one-year">
-<h2><span class="section-number">3.2. </span>Task 2: run a fully coupled mid-Holocene simulation with the orbital forcing for one year<a class="headerlink" href="#task-2-run-a-fully-coupled-mid-holocene-simulation-with-the-orbital-forcing-for-one-year" title="Link to this heading">#</a></h2>
+<h2>Task 2: run a fully coupled mid-Holocene simulation with the orbital forcing for one year<a class="headerlink" href="#task-2-run-a-fully-coupled-mid-holocene-simulation-with-the-orbital-forcing-for-one-year" title="Link to this heading">#</a></h2>
 <section id="id1">
-<h3><span class="section-number">3.2.1. </span>Hints:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<h3>Hints:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Use compset <code class="docutils literal notranslate"><span class="pre">B1850</span></code> and edit <code class="docutils literal notranslate"><span class="pre">user_nl_cpl</span></code> to set up the orbital configuration (no mid-Holocene compset available)</p></li>
 <li><p>Following the <a class="reference external" href="https://www.cesm.ucar.edu/models/cesm2/naming-conventions">CESM naming conventions</a>, use <code class="docutils literal notranslate"><span class="pre">b.e21.B1850.f19_g17.midHolocene.001</span></code> as the case name</p></li>
@@ -567,9 +567,9 @@ NSF National Center for Atmospheric Research</p>
 </section>
 <hr class="docutils" />
 <section id="task-3-how-to-validate-your-simulation-setup">
-<h2><span class="section-number">3.3. </span>Task 3: how to validate your simulation setup<a class="headerlink" href="#task-3-how-to-validate-your-simulation-setup" title="Link to this heading">#</a></h2>
+<h2>Task 3: how to validate your simulation setup<a class="headerlink" href="#task-3-how-to-validate-your-simulation-setup" title="Link to this heading">#</a></h2>
 <section id="id2">
-<h3><span class="section-number">3.3.1. </span>Hints:<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<h3>Hints:<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Going through the log files (in the RUN directory, aka “Factory”) is one way to see how the model is being run.</p></li>
 <li><p>Examining <code class="docutils literal notranslate"><span class="pre">*_in</span></code> files (e.g., <code class="docutils literal notranslate"><span class="pre">CasesDocs/drv_in</span></code> in the Case Directory) is another way to check the setup.</p></li>
@@ -615,7 +615,7 @@ NSF National Center for Atmospheric Research</p>
 </section>
 <hr class="docutils" />
 <section id="summary">
-<h2><span class="section-number">3.4. </span>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Set up and run a CESM simulation in four steps</p></li>
 <li><p>Customize the simulation with <code class="docutils literal notranslate"><span class="pre">xmlchange</span></code> and namelist change</p></li>
@@ -632,16 +632,16 @@ NSF National Center for Atmospheric Research</p>
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "npl-2024a"
+            mode: "npl-2025a"
         },
         kernelOptions: {
-            name: "npl-2024a",
+            name: "npl-2025a",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'npl-2024a'</script>
+    <script>kernelName = 'npl-2025a'</script>
 
                 </article>
               
@@ -659,7 +659,7 @@ NSF National Center for Atmospheric Research</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>2. Run CESM in four steps</p>
+        <p class="prev-next-title">2. Run CESM in four steps</p>
       </div>
     </a>
     <a class="right-next"
@@ -667,7 +667,7 @@ NSF National Center for Atmospheric Research</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4. </span>3.2 Analyze CESM Output</p>
+        <p class="prev-next-title">4. Analyze CESM Output</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -687,20 +687,20 @@ NSF National Center for Atmospheric Research</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-run-a-fully-coupled-preindustrial-simulation-for-one-year">3.1. Task 1: run a fully coupled preindustrial simulation for one year</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hints">3.1.1. Hints:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#further-information">3.1.2. Further information</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-run-a-fully-coupled-preindustrial-simulation-for-one-year">Task 1: run a fully coupled preindustrial simulation for one year</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hints">Hints:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#further-information">Further information</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-run-a-fully-coupled-mid-holocene-simulation-with-the-orbital-forcing-for-one-year">3.2. Task 2: run a fully coupled mid-Holocene simulation with the orbital forcing for one year</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">3.2.1. Hints:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-run-a-fully-coupled-mid-holocene-simulation-with-the-orbital-forcing-for-one-year">Task 2: run a fully coupled mid-Holocene simulation with the orbital forcing for one year</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Hints:</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-how-to-validate-your-simulation-setup">3.3. Task 3: how to validate your simulation setup</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3.3.1. Hints:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-how-to-validate-your-simulation-setup">Task 3: how to validate your simulation setup</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Hints:</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">3.4. Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
 </ul>
   </nav></div>
 

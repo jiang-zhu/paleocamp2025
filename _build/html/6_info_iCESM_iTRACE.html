@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>6. 3.4 More Info: iCESM and iTRACE analysis &#8212; Running CESM in Four Steps &amp; Analyzing Output</title>
+    <title>6. More Info: iCESM and iTRACE analysis &#8212; Running CESM in Four Steps &amp; Analyzing Output</title>
   
   
   
@@ -60,8 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = '6_info_iCESM_iTRACE';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="7. 3.5 Challenge: Run an LGM simulations with the Paleoclimate-Calibrated CESM2" href="7_run_challenging_LGM.html" />
-    <link rel="prev" title="5. 3.3 More Info: Climate and Model Data Access" href="5_info_Data_Access.html" />
+    <link rel="next" title="7. Challenge: Run an LGM simulations with the Paleoclimate-Calibrated CESM2" href="7_run_challenging_LGM.html" />
+    <link rel="prev" title="5. More Info: Climate and Model Data Access" href="5_info_Data_Access.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -187,16 +187,16 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Main Learning Modules</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="1_intro_to_CESM.html">1. 1. Introduction to CESM</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_demo_run_CESM_4steps.html">2. 2. Run CESM in four steps</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3_run_piControl_midHolocene.html">3. 3.1 Run a pair of piControl and midHolocene simulations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="4_analyze_CESM_output.html">4. 3.2 Analyze CESM Output</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_intro_to_CESM.html">1. Introduction to CESM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_demo_run_CESM_4steps.html">2. Run CESM in four steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_run_piControl_midHolocene.html">3. Run a pair of piControl and midHolocene simulations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_analyze_CESM_output.html">4. Analyze CESM Output</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Info and Advanced Modules</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="5_info_Data_Access.html">5. 3.3 More Info: Climate and Model Data Access</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. 3.4 More Info: iCESM and iTRACE analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="7_run_challenging_LGM.html">7. 3.5 Challenge: Run an LGM simulations with the Paleoclimate-Calibrated CESM2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_info_Data_Access.html">5. More Info: Climate and Model Data Access</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. More Info: iCESM and iTRACE analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7_run_challenging_LGM.html">7. Challenge: Run an LGM simulations with the Paleoclimate-Calibrated CESM2</a></li>
 </ul>
 
     </div>
@@ -382,7 +382,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>3.4 More Info: iCESM and iTRACE analysis</h1>
+    <h1>6. More Info: iCESM and iTRACE analysis</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -392,18 +392,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compute-and-plot-precipitation-18o">6.1. Compute and plot precipitation δ18O</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-amoc-from-itrace-and-compare-with-mcmanus-et-al-2004">6.2. Plot AMOC from iTraCE and compare with McManus et al. 2004</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#meridional-overturning-circulation-is-moc-a-5-dimentional-variable">6.2.1. Meridional Overturning Circulation is <code class="docutils literal notranslate"><span class="pre">MOC</span></code>, a 5-dimentional variable</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-left-and-right-plots-are-the-global-mean-and-atlantic-moc-respectively">6.2.2. The left and right plots are the global mean and Atlantic MOC, respectively</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#again-transport-reg-1-means-atlantic-and-moc-comp-0-means-the-total-transport">6.2.3. Again, <code class="docutils literal notranslate"><span class="pre">transport_reg=1</span></code> means Atlantic and <code class="docutils literal notranslate"><span class="pre">moc_comp=0</span></code> means the total transport</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#we-define-amoc-time-series-as-the-maximum-over-the-north-atlantic-and-beneath-a-depth-of-500-m-to-avoid-the-wind-drive-cell">6.2.4. We define AMOC time series as the maximum over the North Atlantic and beneath a depth of 500 m (to avoid the wind-drive cell)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-mcmanus-et-al-2004-data-from-noaa">6.2.5. Load the McManus et al. (2004) data from NOAA</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-time-series">6.2.6. Plot time series</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compute-and-plot-precipitation-18o">Compute and plot precipitation δ18O</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-amoc-from-itrace-and-compare-with-mcmanus-et-al-2004">Plot AMOC from iTraCE and compare with McManus et al. 2004</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#meridional-overturning-circulation-is-moc-a-5-dimentional-variable">Meridional Overturning Circulation is <code class="docutils literal notranslate"><span class="pre">MOC</span></code>, a 5-dimentional variable</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-left-and-right-plots-are-the-global-mean-and-atlantic-moc-respectively">The left and right plots are the global mean and Atlantic MOC, respectively</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#again-transport-reg-1-means-atlantic-and-moc-comp-0-means-the-total-transport">Again, <code class="docutils literal notranslate"><span class="pre">transport_reg=1</span></code> means Atlantic and <code class="docutils literal notranslate"><span class="pre">moc_comp=0</span></code> means the total transport</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#we-define-amoc-time-series-as-the-maximum-over-the-north-atlantic-and-beneath-a-depth-of-500-m-to-avoid-the-wind-drive-cell">We define AMOC time series as the maximum over the North Atlantic and beneath a depth of 500 m (to avoid the wind-drive cell)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-mcmanus-et-al-2004-data-from-noaa">Load the McManus et al. (2004) data from NOAA</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-time-series">Plot time series</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postprocess-annual-mean-18o-from-itrace">6.3. Postprocess annual mean δ18O from iTRACE</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-10-cpus">6.3.1. Request 10 CPUs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postprocess-annual-mean-18o-from-itrace">Postprocess annual mean δ18O from iTRACE</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-10-cpus">Request 10 CPUs</a></li>
 </ul>
 </li>
 </ul>
@@ -419,7 +419,7 @@ document.write(`
                   
   <p><img alt="paleoCAMP logo" src="_images/paleoCAMPLogo.png" /></p>
 <section class="tex2jax_ignore mathjax_ignore" id="more-info-icesm-and-itrace-analysis">
-<h1><span class="section-number">6. </span>3.4 More Info: iCESM and iTRACE analysis<a class="headerlink" href="#more-info-icesm-and-itrace-analysis" title="Link to this heading">#</a></h1>
+<h1>6. More Info: iCESM and iTRACE analysis<a class="headerlink" href="#more-info-icesm-and-itrace-analysis" title="Link to this heading">#</a></h1>
 <p><strong>Tutorials at <a class="reference external" href="https://paleoclimate.camp/">the 2025 paleoCAMP</a> | June 16–June 30, 2025</strong></p>
 <p><a class="reference external" href="https://staff.cgd.ucar.edu/jiangzhu/">Jiang Zhu</a><br />
 <a class="reference external" href="mailto:jiangzhu&#37;&#52;&#48;ucar&#46;edu">jiangzhu<span>&#64;</span>ucar<span>&#46;</span>edu</a><br />
@@ -461,7 +461,7 @@ NSF National Center for Atmospheric Research</p>
 </div>
 <hr class="docutils" />
 <section id="compute-and-plot-precipitation-18o">
-<h2><span class="section-number">6.1. </span>Compute and plot precipitation δ18O<a class="headerlink" href="#compute-and-plot-precipitation-18o" title="Link to this heading">#</a></h2>
+<h2>Compute and plot precipitation δ18O<a class="headerlink" href="#compute-and-plot-precipitation-18o" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>We define a function to compute precipitation δ18O</p></li>
 </ul>
@@ -4270,7 +4270,7 @@ Coordinates:
 </section>
 <hr class="docutils" />
 <section id="plot-amoc-from-itrace-and-compare-with-mcmanus-et-al-2004">
-<h2><span class="section-number">6.2. </span>Plot AMOC from iTraCE and compare with McManus et al. 2004<a class="headerlink" href="#plot-amoc-from-itrace-and-compare-with-mcmanus-et-al-2004" title="Link to this heading">#</a></h2>
+<h2>Plot AMOC from iTraCE and compare with McManus et al. 2004<a class="headerlink" href="#plot-amoc-from-itrace-and-compare-with-mcmanus-et-al-2004" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>TraCE data is directly accessible on NCAR machines: <code class="docutils literal notranslate"><span class="pre">/glade/campaign/cesm/community/palwg/TraCE/TraCE-Main</span></code></p></li>
 </ul>
@@ -4819,7 +4819,7 @@ Wed Sep  3 17:21:14 2008: ncea -O b30.22_0kaDVT.pop.decade.jan.001.nc b30.22_0ka
 Wed Sep  3 17:21:00 2008: ncra -O b30.22_0kaDVT.pop.h.0001-01.nc b30.22_0kaDVT.pop.h.0002-01.nc b30.22_0kaDVT.pop.h.0003-01.nc b30.22_0kaDVT.pop.h.0004-01.nc b30.22_0kaDVT.pop.h.0005-01.nc b30.22_0kaDVT.pop.h.0006-01.nc b30.22_0kaDVT.pop.h.0007-01.nc b30.22_0kaDVT.pop.h.0008-01.nc b30.22_0kaDVT.pop.h.0009-01.nc b30.22_0kaDVT.pop.decade.jan.001.nc</dd><dt><span>nco_openmp_thread_number :</span></dt><dd>1</dd><dt><span>NCO :</span></dt><dd>4.3.2</dd></dl></div></li></ul></div></div></div></div>
 </div>
 <section id="meridional-overturning-circulation-is-moc-a-5-dimentional-variable">
-<h3><span class="section-number">6.2.1. </span>Meridional Overturning Circulation is <code class="docutils literal notranslate"><span class="pre">MOC</span></code>, a 5-dimentional variable<a class="headerlink" href="#meridional-overturning-circulation-is-moc-a-5-dimentional-variable" title="Link to this heading">#</a></h3>
+<h3>Meridional Overturning Circulation is <code class="docutils literal notranslate"><span class="pre">MOC</span></code>, a 5-dimentional variable<a class="headerlink" href="#meridional-overturning-circulation-is-moc-a-5-dimentional-variable" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Dimension <code class="docutils literal notranslate"><span class="pre">transport_reg</span></code> has two values, 0 or 1, which means MOC value for the Global Ocean or the Atlantic Ocean, respectively. The corresponding coordinate <code class="docutils literal notranslate"><span class="pre">transport_regions</span></code> has the full names: (1) Global Ocean - Marginal Seas and (2) Atlantic Ocean + Labrador Sea + GIN Sea + Arctic Ocean.</p></li>
 <li><p>Dimension <code class="docutils literal notranslate"><span class="pre">moc_comp</span></code> has one value, 0, which means that the MOC values are the total transport. Note that potentially the model could write out more components: such as  (1) Total, (2) Eulerian-Mean Advection, and (3) Eddy-Induced Advection (bolus) + Diffusion. See the corresponding coordiname <code class="docutils literal notranslate"><span class="pre">moc_components</span></code> to see more.</p></li>
@@ -5320,7 +5320,7 @@ Attributes:
 </div>
 </section>
 <section id="the-left-and-right-plots-are-the-global-mean-and-atlantic-moc-respectively">
-<h3><span class="section-number">6.2.2. </span>The left and right plots are the global mean and Atlantic MOC, respectively<a class="headerlink" href="#the-left-and-right-plots-are-the-global-mean-and-atlantic-moc-respectively" title="Link to this heading">#</a></h3>
+<h3>The left and right plots are the global mean and Atlantic MOC, respectively<a class="headerlink" href="#the-left-and-right-plots-are-the-global-mean-and-atlantic-moc-respectively" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span><span class="o">.</span><span class="n">MOC</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">moc_comp</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="s1">&#39;time&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">contourf</span><span class="p">(</span>
@@ -5336,7 +5336,7 @@ Attributes:
 </div>
 </section>
 <section id="again-transport-reg-1-means-atlantic-and-moc-comp-0-means-the-total-transport">
-<h3><span class="section-number">6.2.3. </span>Again, <code class="docutils literal notranslate"><span class="pre">transport_reg=1</span></code> means Atlantic and <code class="docutils literal notranslate"><span class="pre">moc_comp=0</span></code> means the total transport<a class="headerlink" href="#again-transport-reg-1-means-atlantic-and-moc-comp-0-means-the-total-transport" title="Link to this heading">#</a></h3>
+<h3>Again, <code class="docutils literal notranslate"><span class="pre">transport_reg=1</span></code> means Atlantic and <code class="docutils literal notranslate"><span class="pre">moc_comp=0</span></code> means the total transport<a class="headerlink" href="#again-transport-reg-1-means-atlantic-and-moc-comp-0-means-the-total-transport" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">amoc</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">MOC</span><span class="o">.</span><span class="n">isel</span><span class="p">(</span><span class="n">transport_reg</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">moc_comp</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -5779,7 +5779,7 @@ Attributes:
 </div>
 </section>
 <section id="we-define-amoc-time-series-as-the-maximum-over-the-north-atlantic-and-beneath-a-depth-of-500-m-to-avoid-the-wind-drive-cell">
-<h3><span class="section-number">6.2.4. </span>We define AMOC time series as the maximum over the North Atlantic and beneath a depth of 500 m (to avoid the wind-drive cell)<a class="headerlink" href="#we-define-amoc-time-series-as-the-maximum-over-the-north-atlantic-and-beneath-a-depth-of-500-m-to-avoid-the-wind-drive-cell" title="Link to this heading">#</a></h3>
+<h3>We define AMOC time series as the maximum over the North Atlantic and beneath a depth of 500 m (to avoid the wind-drive cell)<a class="headerlink" href="#we-define-amoc-time-series-as-the-maximum-over-the-north-atlantic-and-beneath-a-depth-of-500-m-to-avoid-the-wind-drive-cell" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">amoc_ts</span> <span class="o">=</span> <span class="n">amoc</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">moc_z</span><span class="o">=</span><span class="nb">slice</span><span class="p">(</span><span class="mi">50000</span><span class="p">,</span> <span class="mi">500000</span><span class="p">),</span>
@@ -5797,7 +5797,7 @@ Attributes:
 </div>
 </section>
 <section id="load-the-mcmanus-et-al-2004-data-from-noaa">
-<h3><span class="section-number">6.2.5. </span>Load the McManus et al. (2004) data from NOAA<a class="headerlink" href="#load-the-mcmanus-et-al-2004-data-from-noaa" title="Link to this heading">#</a></h3>
+<h3>Load the McManus et al. (2004) data from NOAA<a class="headerlink" href="#load-the-mcmanus-et-al-2004-data-from-noaa" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">McManus04</span> <span class="o">=</span> <span class="s1">&#39;https://www.ncei.noaa.gov/pub/data/paleo/paleocean/sediment_files/complete/o326-gc5-tab.txt&#39;</span>
@@ -6003,7 +6003,7 @@ Attributes:
 </div>
 </section>
 <section id="plot-time-series">
-<h3><span class="section-number">6.2.6. </span>Plot time series<a class="headerlink" href="#plot-time-series" title="Link to this heading">#</a></h3>
+<h3>Plot time series<a class="headerlink" href="#plot-time-series" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
@@ -6046,7 +6046,7 @@ Attributes:
 </section>
 <hr class="docutils" />
 <section id="postprocess-annual-mean-18o-from-itrace">
-<h2><span class="section-number">6.3. </span>Postprocess annual mean δ18O from iTRACE<a class="headerlink" href="#postprocess-annual-mean-18o-from-itrace" title="Link to this heading">#</a></h2>
+<h2>Postprocess annual mean δ18O from iTRACE<a class="headerlink" href="#postprocess-annual-mean-18o-from-itrace" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Author: Jiang Zhu and Chengfei He</p></li>
 </ul>
@@ -6066,7 +6066,7 @@ Attributes:
 </div>
 </div>
 <section id="request-10-cpus">
-<h3><span class="section-number">6.3.1. </span>Request 10 CPUs<a class="headerlink" href="#request-10-cpus" title="Link to this heading">#</a></h3>
+<h3>Request 10 CPUs<a class="headerlink" href="#request-10-cpus" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num_jobs</span> <span class="o">=</span> <span class="mi">10</span>
@@ -6357,7 +6357,7 @@ Wall time: 3min 56s
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">5. </span>3.3 More Info: Climate and Model Data Access</p>
+        <p class="prev-next-title">5. More Info: Climate and Model Data Access</p>
       </div>
     </a>
     <a class="right-next"
@@ -6365,7 +6365,7 @@ Wall time: 3min 56s
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">7. </span>3.5 Challenge: Run an LGM simulations with the Paleoclimate-Calibrated CESM2</p>
+        <p class="prev-next-title">7. Challenge: Run an LGM simulations with the Paleoclimate-Calibrated CESM2</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -6385,18 +6385,18 @@ Wall time: 3min 56s
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compute-and-plot-precipitation-18o">6.1. Compute and plot precipitation δ18O</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-amoc-from-itrace-and-compare-with-mcmanus-et-al-2004">6.2. Plot AMOC from iTraCE and compare with McManus et al. 2004</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#meridional-overturning-circulation-is-moc-a-5-dimentional-variable">6.2.1. Meridional Overturning Circulation is <code class="docutils literal notranslate"><span class="pre">MOC</span></code>, a 5-dimentional variable</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-left-and-right-plots-are-the-global-mean-and-atlantic-moc-respectively">6.2.2. The left and right plots are the global mean and Atlantic MOC, respectively</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#again-transport-reg-1-means-atlantic-and-moc-comp-0-means-the-total-transport">6.2.3. Again, <code class="docutils literal notranslate"><span class="pre">transport_reg=1</span></code> means Atlantic and <code class="docutils literal notranslate"><span class="pre">moc_comp=0</span></code> means the total transport</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#we-define-amoc-time-series-as-the-maximum-over-the-north-atlantic-and-beneath-a-depth-of-500-m-to-avoid-the-wind-drive-cell">6.2.4. We define AMOC time series as the maximum over the North Atlantic and beneath a depth of 500 m (to avoid the wind-drive cell)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-mcmanus-et-al-2004-data-from-noaa">6.2.5. Load the McManus et al. (2004) data from NOAA</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-time-series">6.2.6. Plot time series</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compute-and-plot-precipitation-18o">Compute and plot precipitation δ18O</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-amoc-from-itrace-and-compare-with-mcmanus-et-al-2004">Plot AMOC from iTraCE and compare with McManus et al. 2004</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#meridional-overturning-circulation-is-moc-a-5-dimentional-variable">Meridional Overturning Circulation is <code class="docutils literal notranslate"><span class="pre">MOC</span></code>, a 5-dimentional variable</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-left-and-right-plots-are-the-global-mean-and-atlantic-moc-respectively">The left and right plots are the global mean and Atlantic MOC, respectively</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#again-transport-reg-1-means-atlantic-and-moc-comp-0-means-the-total-transport">Again, <code class="docutils literal notranslate"><span class="pre">transport_reg=1</span></code> means Atlantic and <code class="docutils literal notranslate"><span class="pre">moc_comp=0</span></code> means the total transport</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#we-define-amoc-time-series-as-the-maximum-over-the-north-atlantic-and-beneath-a-depth-of-500-m-to-avoid-the-wind-drive-cell">We define AMOC time series as the maximum over the North Atlantic and beneath a depth of 500 m (to avoid the wind-drive cell)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-the-mcmanus-et-al-2004-data-from-noaa">Load the McManus et al. (2004) data from NOAA</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-time-series">Plot time series</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postprocess-annual-mean-18o-from-itrace">6.3. Postprocess annual mean δ18O from iTRACE</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-10-cpus">6.3.1. Request 10 CPUs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postprocess-annual-mean-18o-from-itrace">Postprocess annual mean δ18O from iTRACE</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-10-cpus">Request 10 CPUs</a></li>
 </ul>
 </li>
 </ul>
