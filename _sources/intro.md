@@ -17,9 +17,7 @@ NSF National Center for Atmospheric Research
 - _Optional_
   - Learn how to run CESM for paleoclimate: e.g., a mid-Holocene simulation
   - Learn to use CESM simulations for hypothesis testing
----
-
-
+  
 ---
 ## Quick Demos
 - Very simple introdution to Unix
