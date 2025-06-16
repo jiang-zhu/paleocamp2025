@@ -31,12 +31,7 @@ NSF National Center for Atmospheric Research
 
 ---
 ## Afternoon modules
+- (Optional) Run a pair of piControl and midHolocene simulations
 - Exercises on analyzing CESM output with NCAR JupyterHub
-- Choose your adventures (choose one or more)
-  - Orbital forcing and monsoon variability
-  - Orbital forcing and the ITCZ
-
----
-## Advanced modules
-* An example on how to set up more complicated paleoclimate simulation (the CESM2-PaleoCalibr LGM)
-* Examples on how to use available simulation and reanalysis data on the NCAR machines
+- Additional info on model data access and analysis
+- (Optional) Run a challenging simulation of the Last Glaccial Maximum
