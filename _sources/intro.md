@@ -11,7 +11,7 @@ NSF National Center for Atmospheric Research
 
 ---
 ## Learning objectives
-- Know basic structure of the Community Earth System Model (CESM) as a software
+- Know the basic structure of the Community Earth System Model (CESM) as a software
 - Know the four steps to set up and run a preindustrial control simulation
 - Learn to use Python/Jupyter Nobebooks to analyze and visualize model output
 - _Optional_
@@ -20,9 +20,9 @@ NSF National Center for Atmospheric Research
   
 ---
 ## Quick Demos
-- Very simple introdution to Unix
-- Introduction to Python and Jupyter
-- Introduction to the NSF NCAR resources and access
+- A simple introduction to Unix
+- A simple introduction to Python and Jupyter
+- An introduction to the NSF NCAR resources and access
 
 ---
 ## Morning modules

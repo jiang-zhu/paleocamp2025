@@ -189,7 +189,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="1_intro_to_CESM.html">1. Introduction to CESM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_demo_run_CESM_4steps.html">2. Run CESM in four steps</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3_run_piControl_midHolocene.html">3. Run a pair of piControl and midHolocene simulations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_optional_run_piControl_midHolocene.html">3. (Optional) Run a pair of piControl and midHolocene simulations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="4_analyze_CESM_output.html">4. Analyze CESM Output</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Info and Advanced Modules</span></p>
@@ -394,7 +394,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-python">Why Python?</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pangeo-is-the-recommended-python-software-stack"><em>Pangeo</em> is the recommended Python software stack:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-install-external-python-libs-on-my-laptop-desktop">“How to install external python libs on my laptop / desktop?”</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-install-external-python-libs-on-my-laptop-desktop">“How to install external Python libs on my laptop / desktop?”</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hello-world">Hello world</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-between-python-c-and-matlab">Comparison between Python, C, and Matlab</a></li>
 </ul>
@@ -446,8 +446,8 @@ NSF National Center for Atmospheric Research</p>
 <li><p><a class="reference external" href="https://www.numpy.org/">numpy</a>: For general Python N-dimensional arrays</p></li>
 <li><p><a class="reference external" href="https://matplotlib.org/">matplotlib</a>: For general plotting capabilities</p></li>
 <li><p><a class="reference external" href="https://scitools.org.uk/cartopy/docs/latest/">cartopy</a>: For plotting data on map projections</p></li>
-<li><p><a class="reference external" href="https://pandas.pydata.org/">pandas</a> is useful to import/export files in common formats (e.g., csv, xlsx) and organize and manipulate the data in a handy object</p></li>
-<li><p><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/">scipy</a>: For scientific python functions and features based on NumPy arrays</p></li>
+<li><p><a class="reference external" href="https://pandas.pydata.org/">pandas</a>: For importing/exporting files in common formats (e.g., csv, xlsx) and organize and manipulate the data in a handy object</p></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/">scipy</a>: For scientific computing (e.g., optimization, linear algebra, statistics, file I/O for formats like .mat) based on numpy arrays</p></li>
 <li><p><a class="reference external" href="https://hvplot.pyviz.org/">hvplot</a>: A high-level plotting API for the PyData ecosystem built on HoloViews.</p></li>
 <li><p><a class="reference external" href="https://xesmf.readthedocs.io/en/latest/">xesmf</a>: Xarray-based regridding package</p></li>
 <li><p><a class="reference external" href="https://scikit-learn.org/stable/">scikit-learn</a>: For data mining and data analysis</p></li>
@@ -455,7 +455,7 @@ NSF National Center for Atmospheric Research</p>
 </section>
 <hr class="docutils" />
 <section id="how-to-install-external-python-libs-on-my-laptop-desktop">
-<h3>“How to install external python libs on my laptop / desktop?”<a class="headerlink" href="#how-to-install-external-python-libs-on-my-laptop-desktop" title="Link to this heading">#</a></h3>
+<h3>“How to install external Python libs on my laptop / desktop?”<a class="headerlink" href="#how-to-install-external-python-libs-on-my-laptop-desktop" title="Link to this heading">#</a></h3>
 <p>To best way to get the scientific Python environment is using the <a class="reference external" href="https://conda.io/docs/">Conda package management system</a>. Please follow the <a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/install/index.html">official installation guide</a> for installing on</p>
 <ul class="simple">
 <li><p>Linux: <a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/install/linux.html">https://conda.io/projects/conda/en/latest/user-guide/install/linux.html</a></p></li>
@@ -488,9 +488,9 @@ NSF National Center for Atmospheric Research</p>
 <hr class="docutils" />
 <section id="jupyter">
 <h2>Jupyter<a class="headerlink" href="#jupyter" title="Link to this heading">#</a></h2>
-<p>Jupyter <em>is</em> a webserver, for interactive computing across all programming languages.</p>
-<p>When you run it on your laptop (<code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">Notebook</span></code> or <code class="docutils literal notranslate"><span class="pre">JupyterLab</span></code>), you can directly interact with the webserver from your browser.<br />
-When you are remote, you just communicate HTML (and serialized data) back and forth from your browser to the webserver.</p>
+<p>Jupyter <em>is</em> a web server for interactive computing that supports multiple programming languages.</p>
+<p>When you run it on your laptop (<code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">Notebook</span></code> or <code class="docutils literal notranslate"><span class="pre">JupyterLab</span></code>), you can directly interact with the web server from your browser.<br />
+When working remotely (e.g., on a HPC), you just communicate HTML (and serialized data) back and forth from your browser to the web server.</p>
 <section id="reproducibility-extensibility">
 <h3>Reproducibility &amp; Extensibility<a class="headerlink" href="#reproducibility-extensibility" title="Link to this heading">#</a></h3>
 <p>It is fast and efficient.<br />
@@ -553,16 +553,16 @@ Jupyter allows you to save your work in a notebook (<code class="docutils litera
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "npl-2025a"
+            mode: "python"
         },
         kernelOptions: {
-            name: "npl-2025a",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'npl-2025a'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -610,7 +610,7 @@ Jupyter allows you to save your work in a notebook (<code class="docutils litera
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-python">Why Python?</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pangeo-is-the-recommended-python-software-stack"><em>Pangeo</em> is the recommended Python software stack:</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-install-external-python-libs-on-my-laptop-desktop">“How to install external python libs on my laptop / desktop?”</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-install-external-python-libs-on-my-laptop-desktop">“How to install external Python libs on my laptop / desktop?”</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hello-world">Hello world</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparison-between-python-c-and-matlab">Comparison between Python, C, and Matlab</a></li>
 </ul>
@@ -647,7 +647,7 @@ By Jiang Zhu
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright © 2025 Jiang Zhu.
       <br/>
     
   </p>

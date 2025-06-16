@@ -189,7 +189,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="1_intro_to_CESM.html">1. Introduction to CESM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_demo_run_CESM_4steps.html">2. Run CESM in four steps</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3_run_piControl_midHolocene.html">3. Run a pair of piControl and midHolocene simulations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_optional_run_piControl_midHolocene.html">3. (Optional) Run a pair of piControl and midHolocene simulations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="4_analyze_CESM_output.html">4. Analyze CESM Output</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Info and Advanced Modules</span></p>
@@ -476,8 +476,8 @@ NSF National Center for Atmospheric Research</p>
 <p><strong>Description</strong>: <code class="docutils literal notranslate"><span class="pre">rm</span></code> deletes files or directories. Be cautious, as the operation is irreversible.</p>
 <p><strong>Examples</strong>:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">file1</span></code> - Deletes a file named <em>file1</em></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-rf</span> <span class="pre">directory1</span></code> - Removes a directory named <em>directory1</em> and all of its contents</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">file</span></code> - Deletes a file named <em>file</em></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-rf</span> <span class="pre">directory</span></code> - Removes a directory named <em>directory</em> and all of its contents. “-f” means “force it” without prompts, and this operation is irreversible and could be dangerous.</p></li>
 </ul>
 </section>
 <hr class="docutils" />
@@ -497,7 +497,8 @@ NSF National Center for Atmospheric Research</p>
 <p><strong>Examples</strong>:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">grep</span> <span class="pre">hello</span> <span class="pre">file.txt</span></code> - Searches for the string <em>hello</em> in the <em>file.txt</em> file and displays all lines containing that string</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">grep</span> <span class="pre">-r</span> <span class="pre">directory1</span></code> - Searches for a string recursively within all files that are in the directory <code class="docutils literal notranslate"><span class="pre">directory1</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">grep</span> <span class="pre">-r</span> <span class="pre">hello</span> <span class="pre">directory</span></code> - Searches for a string recursively within all files that are in the directory <code class="docutils literal notranslate"><span class="pre">directory</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">grep</span> <span class="pre">-ir</span> <span class="pre">hello</span> <span class="pre">directory</span></code> - Searches ignoring case matching (uppercase/lowercase)</p></li>
 </ul>
 </section>
 <hr class="docutils" />
@@ -524,7 +525,7 @@ NSF National Center for Atmospheric Research</p>
 <ul class="simple">
 <li><p>the basics of Unix file structures</p></li>
 <li><p>how to navigate in a Unix environment</p></li>
-<li><p>hot to create, store and search for files.</p></li>
+<li><p>how to create, store and search for files.</p></li>
 </ul>
 <p>The expected length is 15-30 minutes for users with some Unix experience, and 30-60 minutes for novices.</p>
 </section>
@@ -539,16 +540,16 @@ NSF National Center for Atmospheric Research</p>
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "npl-2025a"
+            mode: "python"
         },
         kernelOptions: {
-            name: "npl-2025a",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'npl-2025a'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -629,7 +630,7 @@ By Jiang Zhu
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright © 2025 Jiang Zhu.
       <br/>
     
   </p>

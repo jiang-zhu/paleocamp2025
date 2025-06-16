@@ -61,7 +61,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="5. More Info: Climate and Model Data Access" href="5_info_Data_Access.html" />
-    <link rel="prev" title="3. Run a pair of piControl and midHolocene simulations" href="3_run_piControl_midHolocene.html" />
+    <link rel="prev" title="3. (Optional) Run a pair of piControl and midHolocene simulations" href="3_optional_run_piControl_midHolocene.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -189,7 +189,7 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="1_intro_to_CESM.html">1. Introduction to CESM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_demo_run_CESM_4steps.html">2. Run CESM in four steps</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3_run_piControl_midHolocene.html">3. Run a pair of piControl and midHolocene simulations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_optional_run_piControl_midHolocene.html">3. (Optional) Run a pair of piControl and midHolocene simulations</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Analyze CESM Output</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Info and Advanced Modules</span></p>
@@ -519,9 +519,6 @@ NSF National Center for Atmospheric Research</p>
 
 <span class="c1"># hvplot provides Interactive plots</span>
 <span class="kn">import</span> <span class="nn">hvplot.xarray</span>
-
-<span class="kn">import</span> <span class="nn">warnings</span>
-<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -32456,10 +32453,10 @@ Attributes:
 </div>
 <ul class="simple">
 <li><p>What do nlat and nlon mean?</p></li>
-<li><p>Where is Greenland? It is the “north pole” in the model!</p></li>
+<li><p>Where is Greenland? It is the “north pole” in the model!<br />
+<img alt="POP ocean grid" src="_images/pop_gx1_grid.png" /></p></li>
 </ul>
-<!-- ![POP ocean grid](./images/pop_gx1_grid.png) -->
-<p align="center"><img src="./images/pop_gx1_grid.png" width="400"/></p>
+<!-- <p align="center"><img src="./images/pop_gx1_grid.png" width="400"/></p> -->
 <p style="text-align: center;"> Figure: POP ocean grid</p></section>
 <section id="regridding-is-needed">
 <h3>Regridding is needed!<a class="headerlink" href="#regridding-is-needed" title="Link to this heading">#</a></h3>
@@ -33035,16 +33032,16 @@ Attributes:
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "npl-2025a"
+            mode: "python"
         },
         kernelOptions: {
-            name: "npl-2025a",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'npl-2025a'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -33057,12 +33054,12 @@ Attributes:
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="3_run_piControl_midHolocene.html"
+       href="3_optional_run_piControl_midHolocene.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">3. Run a pair of piControl and midHolocene simulations</p>
+        <p class="prev-next-title">3. (Optional) Run a pair of piControl and midHolocene simulations</p>
       </div>
     </a>
     <a class="right-next"
@@ -33151,7 +33148,7 @@ By Jiang Zhu
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright © 2025 Jiang Zhu.
       <br/>
     
   </p>

@@ -189,7 +189,7 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Introduction to CESM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_demo_run_CESM_4steps.html">2. Run CESM in four steps</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3_run_piControl_midHolocene.html">3. Run a pair of piControl and midHolocene simulations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_optional_run_piControl_midHolocene.html">3. (Optional) Run a pair of piControl and midHolocene simulations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="4_analyze_CESM_output.html">4. Analyze CESM Output</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Info and Advanced Modules</span></p>
@@ -421,9 +421,7 @@ NSF National Center for Atmospheric Research</p>
 <section id="learning-objectives">
 <h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Know basic structure of CESM as a software including the workspaces</p></li>
-<li><p>Know how to set up a simple experiment with CESM</p></li>
-<li><p>Know how to customize details of the experiment using xmlchange and namelist</p></li>
+<li><p>Know the basic structure of CESM as a software, including the workspaces</p></li>
 </ul>
 <p><strong>Time to learn</strong>: 30 minutes</p>
 <p><strong>NOTE</strong>: Hands-on exercise is in the next module. You don’t need to do anything yet.</p>
@@ -452,7 +450,7 @@ NSF National Center for Atmospheric Research</p>
 </ol>
 <ul class="simple">
 <li><p>contains the raw materials, e.g., steel and batteries</p></li>
-<li><p>netcdf data</p></li>
+<li><p>NetCDF data</p></li>
 </ul>
 <ol class="arabic simple" start="3">
 <li><p>Case Directory, “<em>Production Control Room</em>”</p></li>
@@ -466,21 +464,21 @@ NSF National Center for Atmospheric Research</p>
 </ol>
 <ul class="simple">
 <li><p>where workers assemble the EVs</p></li>
-<li><p>Library, executables, netcdf files, …</p></li>
+<li><p>Library, executables, NetCDF files, …</p></li>
 </ul>
 <ol class="arabic simple" start="5">
 <li><p>Archive Directory, “<em>Storage</em>”</p></li>
 </ol>
 <ul class="simple">
 <li><p>where you store the assembled EVs</p></li>
-<li><p>netcdf files, log files in text, …</p></li>
+<li><p>NetCDF files, log files in text, …</p></li>
 </ul>
 <p><img alt="CESM2 Workspaces" src="_images/CESM2_Workspaces_Detail.png" /></p>
 <p style="text-align: center;"> Figure: CESM2 Workspaces</p></section>
 <section id="get-the-cesm-code">
 <h2>Get the CESM code<a class="headerlink" href="#get-the-cesm-code" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>CESM code development and release is on Github: <code class="docutils literal notranslate"><span class="pre">https://github.com/ESCOMP/CESM</span></code></p></li>
+<li><p>CESM code development and release is on Github: <a class="github reference external" href="https://github.com/ESCOMP/CESM.git">ESCOMP/CESM.git</a></p></li>
 <li><p>If you would like to get a copy of the code in the future</p>
 <ul>
 <li><p>git clone -b release-cesm2.1.5 <a class="github reference external" href="https://github.com/ESCOMP/CESM.git">ESCOMP/CESM.git</a> cesm2.1.5</p></li>
@@ -488,15 +486,15 @@ NSF National Center for Atmospheric Research</p>
 </ul>
 </li>
 </ul>
-<p>*NOTE: for this tutorial, please use the code in my workspace: <code class="docutils literal notranslate"><span class="pre">/glade/work/jiangzhu/paleocamp/cesm2.1.5</span></code></p>
+<p>*NOTE: for this tutorial, if you decide to run CESM, please use the code in my workspace: <code class="docutils literal notranslate"><span class="pre">/glade/work/jiangzhu/paleocamp/cesm2.1.5</span></code></p>
 </section>
 <hr class="docutils" />
 <section id="summary">
 <h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>CESM is a software primarily in FORTRAN and You need to build the executable.</p></li>
-<li><p>Like managing an EV company, you deal with multiple workplaces. What are they?</p></li>
-<li><p>CESM code is managed on GitHub</p></li>
+<li><p>CESM is a software primarily in FORTRAN and you need to build the executable.</p></li>
+<li><p>Like managing an EV company, you deal with multiple workplaces. <em>What are they?</em></p></li>
+<li><p>CESM code is managed on GitHub.</p></li>
 </ul>
 </section>
 <hr class="docutils" />
@@ -518,16 +516,16 @@ NSF National Center for Atmospheric Research</p>
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "npl-2025a"
+            mode: "python"
         },
         kernelOptions: {
-            name: "npl-2025a",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'npl-2025a'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -603,7 +601,7 @@ By Jiang Zhu
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright © 2025 Jiang Zhu.
       <br/>
     
   </p>

@@ -189,7 +189,7 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="1_intro_to_CESM.html">1. Introduction to CESM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_demo_run_CESM_4steps.html">2. Run CESM in four steps</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3_run_piControl_midHolocene.html">3. Run a pair of piControl and midHolocene simulations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_optional_run_piControl_midHolocene.html">3. (Optional) Run a pair of piControl and midHolocene simulations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="4_analyze_CESM_output.html">4. Analyze CESM Output</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Info and Advanced Modules</span></p>
@@ -405,7 +405,7 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-ncar-jupyterhub">Use the NCAR JupyterHub</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#go-to-ncar-jupyterhub-https-jupyterhub-hpc-ucar-edu">Go to NCAR JupyterHub: https://jupyterhub.hpc.ucar.edu/</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sign-in-with-your-username-password-and-passcode">Sign in with your username, password, and passcode</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sign-in-with-your-username-and-password-passcode">Sign in with your <code class="docutils literal notranslate"><span class="pre">username</span></code> and <code class="docutils literal notranslate"><span class="pre">password,passcode</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#start-the-jupyterhub">Start the JupyterHub</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#launch-a-notebook-with-python">Launch a Notebook with Python</a></li>
 </ul>
@@ -460,8 +460,8 @@ NSF National Center for Atmospheric Research</p>
 <hr class="docutils" />
 <section id="connect-derecho-via-terminal">
 <h2>Connect <code class="docutils literal notranslate"><span class="pre">Derecho</span></code> via Terminal<a class="headerlink" href="#connect-derecho-via-terminal" title="Link to this heading">#</a></h2>
+<p><em><strong>Most of the users use <code class="docutils literal notranslate"><span class="pre">terminal</span></code> to remotely access the NCAR HPC and run CESM there.</strong></em></p>
 <p>A <code class="docutils literal notranslate"><span class="pre">terminal</span></code> is a text-based interface used to control a Unix computer. It is widely considered the most efficient method to accomplish a given task or maintenance operation.</p>
-<p>Most of the users use <code class="docutils literal notranslate"><span class="pre">terminal</span></code> to remotely access the NCAR HPC and run CESM there.</p>
 <section id="launch-a-terminal-from-your-system-mac-or-pc">
 <h3>Launch a terminal from your system (Mac or PC)<a class="headerlink" href="#launch-a-terminal-from-your-system-mac-or-pc" title="Link to this heading">#</a></h3>
 <section id="if-on-a-mac-open-a-terminal">
@@ -469,7 +469,7 @@ NSF National Center for Atmospheric Research</p>
 <p>Go to the search spotlight (magnifying glass icon) and type in <code class="docutils literal notranslate"><span class="pre">terminal</span></code>.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Terminal</span></code> is automatically built into the MacOS and clicking on it will open a terminal window.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">iTerm</span></code> is software that was installed by the user on their laptop and is another option for opening a terminal.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">iTerm</span></code> is a third-party software that was installed by the user on their laptop and is another option for opening a terminal.</p></li>
 </ul>
 <p><img alt="terminal mac" src="_images/term_mac.png" /></p>
 <p style="text-align: center;"> Figure: terminal mac</p></section>
@@ -500,20 +500,19 @@ NSF National Center for Atmospheric Research</p>
 <hr class="docutils" />
 <section id="use-the-ncar-jupyterhub">
 <h2>Use the NCAR JupyterHub<a class="headerlink" href="#use-the-ncar-jupyterhub" title="Link to this heading">#</a></h2>
+<p><em><strong>I used JupyterHub daily to access data and perform analyses.</strong></em></p>
 <section id="go-to-ncar-jupyterhub-https-jupyterhub-hpc-ucar-edu">
 <h3>Go to NCAR JupyterHub: <a class="reference external" href="https://jupyterhub.hpc.ucar.edu/">https://jupyterhub.hpc.ucar.edu/</a><a class="headerlink" href="#go-to-ncar-jupyterhub-https-jupyterhub-hpc-ucar-edu" title="Link to this heading">#</a></h3>
 <!-- 
 <p align="center"><img src="./images/jupyterhub_login0.png" width="300"/></p>
-
 <p align="center"><img src="./images/jupyterhub_login1.png" width="300"/></p>
  -->
-<p><img alt="JupyterHub login" src="_images/jupyterhub_login0.png" /></p>
-<p style="text-align: left;"> Figure: JupyterHub login</p>
-![JupyterHub login](./images/jupyterhub_login1.png)
+<p><img alt="JupyterHub login0" src="_images/jupyterhub_login0.png" /></p>
+<p style="text-align: left;"> Figure: JupyterHub login0</p></section>
+<section id="sign-in-with-your-username-and-password-passcode">
+<h3>Sign in with your <code class="docutils literal notranslate"><span class="pre">username</span></code> and <code class="docutils literal notranslate"><span class="pre">password,passcode</span></code><a class="headerlink" href="#sign-in-with-your-username-and-password-passcode" title="Link to this heading">#</a></h3>
+<p><img alt="JupyterHub login1" src="_images/jupyterhub_login1.png" /></p>
 <p style="text-align: left;"> Figure: JupyterHub login1</p>
-</section>
-<section id="sign-in-with-your-username-password-and-passcode">
-<h3>Sign in with your username, password, and passcode<a class="headerlink" href="#sign-in-with-your-username-password-and-passcode" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Type in your <code class="docutils literal notranslate"><span class="pre">username</span></code></p></li>
 <li><p>Type in your <code class="docutils literal notranslate"><span class="pre">password,passcode</span></code></p>
@@ -523,13 +522,12 @@ NSF National Center for Atmospheric Research</p>
 </ul>
 </li>
 <li><p>NOTE: This is the way to avoid jamming DUO-JupyterHub when multiple users login at the same time</p></li>
-<li><p>NOTE for the future use: Sign in with your username and password, and approve the DUO push</p></li>
+<li><p>NOTE: For the future use, sign in with your username and password, and approve the DUO push</p></li>
 </ul>
 <!-- <p align="center"><img src="./images/DUO_Passcode.png" alt="DUO Passcode" width="300"/></p>
  -->
 <p><img alt="JupyterHub login" src="_images/DUO_Passcode.png" /></p>
-<p style="text-align: center;">Figure: Jupyterhub Derecho</p>
-</section>
+<p style="text-align: center;">Figure: Jupyterhub Derecho</p></section>
 <section id="start-the-jupyterhub">
 <h3>Start the JupyterHub<a class="headerlink" href="#start-the-jupyterhub" title="Link to this heading">#</a></h3>
 <ul class="simple">
@@ -582,16 +580,16 @@ NSF National Center for Atmospheric Research</p>
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "npl-2025a"
+            mode: "python"
         },
         kernelOptions: {
-            name: "npl-2025a",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'npl-2025a'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -650,7 +648,7 @@ NSF National Center for Atmospheric Research</p>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-ncar-jupyterhub">Use the NCAR JupyterHub</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#go-to-ncar-jupyterhub-https-jupyterhub-hpc-ucar-edu">Go to NCAR JupyterHub: https://jupyterhub.hpc.ucar.edu/</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sign-in-with-your-username-password-and-passcode">Sign in with your username, password, and passcode</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sign-in-with-your-username-and-password-passcode">Sign in with your <code class="docutils literal notranslate"><span class="pre">username</span></code> and <code class="docutils literal notranslate"><span class="pre">password,passcode</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#start-the-jupyterhub">Start the JupyterHub</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#launch-a-notebook-with-python">Launch a Notebook with Python</a></li>
 </ul>
@@ -681,7 +679,7 @@ By Jiang Zhu
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright © 2025 Jiang Zhu.
       <br/>
     
   </p>
