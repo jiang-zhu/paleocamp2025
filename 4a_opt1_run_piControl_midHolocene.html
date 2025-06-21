@@ -406,6 +406,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Hints:</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tip-quick-visualization-of-cesm-output-on-derecho">Tip: Quick visualization of CESM output on Derecho</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
 </ul>
             </nav>
@@ -523,7 +524,11 @@ NSF National Center for Atmospheric Research</p>
 <li><p>Search <code class="docutils literal notranslate"><span class="pre">orb_</span></code> <a class="reference external" href="https://docs.cesm.ucar.edu/models/cesm2/settings/current/drv_nml.html">here</a> to learn more</p></li>
 </ul>
 </li>
-<li><p>Use Unix editor <code class="docutils literal notranslate"><span class="pre">vi</span></code>/<code class="docutils literal notranslate"><span class="pre">emacs</span></code>/<code class="docutils literal notranslate"><span class="pre">nano</span></code> to open, edit, and save</p></li>
+<li><p>Use Unix editor <code class="docutils literal notranslate"><span class="pre">vi</span></code>/<code class="docutils literal notranslate"><span class="pre">emacs</span></code>/<code class="docutils literal notranslate"><span class="pre">nano</span></code> to open, edit, and save (Use <code class="docutils literal notranslate"><span class="pre">nano</span></code> if you are not familiar with the other two)</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">nano</span> <span class="pre">user_nl_cpl</span></code></p></li>
+</ul>
+</li>
 <li><p>These namelist changes can be done after <code class="docutils literal notranslate"><span class="pre">case.build</span></code> but before <code class="docutils literal notranslate"><span class="pre">case.submit</span></code></p></li>
 </ul>
 <div class="alert alert-success">   
@@ -581,7 +586,8 @@ NSF National Center for Atmospheric Research</p>
 <ol class="arabic simple">
 <li><p>If you want to check the log file, <code class="docutils literal notranslate"><span class="pre">cpl.log.xxx</span></code>, in the Run Directory (when model is still running) or in your Storage Directory (when the simulation and archiving have finished).</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>vi<span class="w"> </span>/glade/derecho/scratch/jiangzhu/archive/b.e21.B1850.f19_g17.midHolocene.001/logs/cpl.log.3950708.desched1.240330-011322.gz
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>e.g.,
+vi<span class="w"> </span>/glade/derecho/scratch/jiangzhu/archive/b.e21.B1850.f19_g17.midHolocene.001/logs/cpl.log.3950708.desched1.240330-011322.gz
 </pre></div>
 </div>
 <p>type <code class="docutils literal notranslate"><span class="pre">/orb_params</span></code> to search, you should see the following</p>
@@ -613,6 +619,26 @@ NSF National Center for Atmospheric Research</p>
 <p>Try also <code class="docutils literal notranslate"><span class="pre">grep</span> <span class="pre">orb_</span> <span class="pre">CaseDocs/drv_in</span></code> in the Case Directory</p>
 </details>
 </div></section>
+</section>
+<hr class="docutils" />
+<section id="tip-quick-visualization-of-cesm-output-on-derecho">
+<h2>Tip: Quick visualization of CESM output on Derecho<a class="headerlink" href="#tip-quick-visualization-of-cesm-output-on-derecho" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Option 1: Use <code class="docutils literal notranslate"><span class="pre">ncvis</span></code> (recommended)</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/glade/derecho/scratch/jiangzhu/archive/b.e21.B1850.f19_g17.piControl.001/atm/hist
+ncvis<span class="w"> </span>b.e21.B1850.f19_g17.piControl.001.cam.h0.0001-07.nc
+</pre></div>
+</div>
+<p>If the system cannot find <code class="docutils literal notranslate"><span class="pre">ncvis</span></code>, you can use <code class="docutils literal notranslate"><span class="pre">/glade/u/home/ullrich/ncvis/ncvis</span> <span class="pre">b.e21.B1850.f19_g17.piControl.001.cam.h0.0001-07.nc</span></code></p>
+<ul class="simple">
+<li><p>Option 2: Use <code class="docutils literal notranslate"><span class="pre">ncview</span></code> (lightweight alternativ)</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>module<span class="w"> </span>load<span class="w"> </span>ncview
+<span class="nb">cd</span><span class="w"> </span>/glade/derecho/scratch/jiangzhu/archive/b.e21.B1850.f19_g17.piControl.001/atm/hist
+ncview<span class="w"> </span>b.e21.B1850.f19_g17.piControl.001.cam.h0.0001-07.nc
+</pre></div>
+</div>
 </section>
 <hr class="docutils" />
 <section id="summary">
@@ -701,6 +727,7 @@ NSF National Center for Atmospheric Research</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Hints:</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tip-quick-visualization-of-cesm-output-on-derecho">Tip: Quick visualization of CESM output on Derecho</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
 </ul>
   </nav></div>

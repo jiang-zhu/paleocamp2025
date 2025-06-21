@@ -394,6 +394,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-community-earth-system-model-cesm">The Community Earth System Model (CESM)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cesm-as-a-software">CESM as a software</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cesm-workspaces-assuming-you-run-a-company-that-builds-new-electric-vehicles">CESM Workspaces (assuming you run a company that builds new  electric vehicles)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-the-cesm-code">Get the CESM code</a></li>
@@ -428,11 +429,18 @@ NSF National Center for Atmospheric Research</p>
 <p><strong>NOTE</strong>: Hands-on exercise is in the next module. You don’t need to do anything yet.</p>
 </section>
 <hr class="docutils" />
+<section id="the-community-earth-system-model-cesm">
+<h2>The Community Earth System Model (CESM)<a class="headerlink" href="#the-community-earth-system-model-cesm" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>CESM is a fully coupled global Earth system model developed primaily by NSF National Center for Atmospheric Research (NCAR) in collaboration with colleagues in the research community. CESM provides state of the art computer simulations of Earth’s past, present, and future Earth-system states.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
 <section id="cesm-as-a-software">
 <h2>CESM as a software<a class="headerlink" href="#cesm-as-a-software" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>~5 million lines of FORTRAN* source code and scripts</p></li>
-<li><p>You need to <strong>build the source code</strong> to create and run the executable.</p></li>
+<li><p>~5 million lines of FORTRAN* source code and scripts (Minecraft is estimated to have 1.8-4.8 million)</p></li>
+<li><p>You need to <strong>build the source code</strong> to create and run the executable on a supercomputer.</p></li>
 <li><p>Read more about CESM <a class="reference external" href="https://www.cesm.ucar.edu/">here</a></p></li>
 </ul>
 <p>*NOTE: <a class="reference external" href="https://partee.io/2021/02/21/climate-model-response/">Why FORTRAN?</a></p>
@@ -443,36 +451,36 @@ NSF National Center for Atmospheric Research</p>
 <li><p>CESM Code, “<em>Headquarter</em>”</p></li>
 </ol>
 <ul class="simple">
-<li><p>contains your intellectual properties, e.g., research/designing of EVs</p></li>
 <li><p>FORTRAN, Python, &amp; XML (Extensible Markup Language) files</p></li>
+<li><p>contains your intellectual properties, e.g., research/designing of EVs</p></li>
 </ul>
 <ol class="arabic simple" start="2">
 <li><p>Inputdata Directory, “<em>Supply Warehouse</em>”</p></li>
 </ol>
 <ul class="simple">
+<li><p>NetCDF data for boundary/initial conditions</p></li>
 <li><p>contains the raw materials, e.g., steel and batteries</p></li>
-<li><p>NetCDF data</p></li>
 </ul>
 <ol class="arabic simple" start="3">
 <li><p>Case Directory, “<em>Production Control Room</em>”</p></li>
 </ol>
 <ul class="simple">
-<li><p>where you give instructions, e.g., to hire 100 workers and produce 5 EVs per day</p></li>
 <li><p>Text, script, XML files</p></li>
+<li><p>where you give instructions, e.g., to hire 100 workers and produce 5 EVs per day</p></li>
 </ul>
 <ol class="arabic simple" start="4">
 <li><p>Build/Run Directory, “<em>Factory</em>”</p></li>
 </ol>
 <ul class="simple">
-<li><p>where workers assemble the EVs</p></li>
 <li><p>Library, executables, NetCDF files, …</p></li>
+<li><p>where workers assemble the EVs</p></li>
 </ul>
 <ol class="arabic simple" start="5">
 <li><p>Archive Directory, “<em>Storage</em>”</p></li>
 </ol>
 <ul class="simple">
-<li><p>where you store the assembled EVs</p></li>
 <li><p>NetCDF files, log files in text, …</p></li>
+<li><p>where you store the assembled EVs and work log</p></li>
 </ul>
 <p><img alt="CESM2 Workspaces" src="_images/CESM2_Workspaces_Detail.png" /></p>
 <p style="text-align: center;"> Figure: CESM2 Workspaces</p></section>
@@ -573,6 +581,7 @@ NSF National Center for Atmospheric Research</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-community-earth-system-model-cesm">The Community Earth System Model (CESM)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cesm-as-a-software">CESM as a software</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cesm-workspaces-assuming-you-run-a-company-that-builds-new-electric-vehicles">CESM Workspaces (assuming you run a company that builds new  electric vehicles)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-the-cesm-code">Get the CESM code</a></li>
