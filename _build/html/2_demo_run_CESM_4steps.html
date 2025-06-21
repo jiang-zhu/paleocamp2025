@@ -431,7 +431,7 @@ NSF National Center for Atmospheric Research</p>
 <h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Know how to set up a simple experiment with CESM</p></li>
-<li><p>Know how to customize details of the experiment using xmlchange and namelist</p></li>
+<li><p>Know how to customize details of the experiment using xmlchange and namelist modifications</p></li>
 </ul>
 <p><strong>Time to learn</strong>: 40 minutes</p>
 <p><strong>NOTE</strong>: This is a demonstration module, and you don’t need to do anything yet.</p>
@@ -557,7 +557,7 @@ Note: It is recommended that you avoid building CESM directly on a shared login 
 <li><p>For example, change the simulation length of a single submission to 1 year (the default setting is 5 days):</p></li>
 </ul>
 <div class="alert alert-info" style="text-align: left;">
-./xmlchange STOP_OPTION=nyears,STOP_N=1
+./xmlchange STOP_N=1,STOP_OPTION=nyears
 </div>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">STOP_OPTION</span></code> controls the units in which you are specifying the length of the simulation</p></li>
@@ -566,7 +566,7 @@ Note: It is recommended that you avoid building CESM directly on a shared login 
 <li><p>You can check values of specific variables using:</p></li>
 </ul>
 <div class="alert alert-info" style="text-align: left;">
-./xmlquery STOP_OPTION,STOP_N
+./xmlquery STOP_N,STOP_OPTION
 </div>
 <ul class="simple">
 <li><p>You can use the <code class="docutils literal notranslate"><span class="pre">-p</span></code> option with <code class="docutils literal notranslate"><span class="pre">xmlquery</span></code> to find a partial match. The following will show all available variable names that contain <code class="docutils literal notranslate"><span class="pre">STOP</span></code>:</p></li>
@@ -615,7 +615,6 @@ You can use <code class="docutils literal notranslate"><span class="pre">STOP_OP
 <section id="optional-advanced-resources">
 <h2>Optional advanced resources<a class="headerlink" href="#optional-advanced-resources" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Check out the full annual CESM Tutorial <a class="reference external" href="https://ncar.github.io/CESM-Tutorial/README.html">here</a></p></li>
 <li><p><a class="reference external" href="https://github.com/ESMCI/visualCaseGen">visualCaseGen</a>: a GUI that runs on JupyterLab and guides the users through the process of creating CESM cases, e.g., choosing appropriate compsets and grids.</p></li>
 </ul>
 </section>
